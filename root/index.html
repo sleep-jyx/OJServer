@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div align="center">
+      <h1>主页</h1>
+      <a href="resource/pic1.jpg">图片</a><br />
+      <a href="resource/testnote.md">markdown</a><br />
+      <a href="log.html">返回登录页</a>
+      <form action="cgi/cgiGetProblemSet.cgi" method="post">
+        <div align="center"><button type="submit">题单</button></div>
+      </form>
+
+      <form name="submitForm" method="POST" action="cgi/cgiGetProblemSet.cgi">
+        <a href="javascript:document.submitForm.submit()">题单</a>
+      </form>
+    </div>
+  </body>
+</html>
