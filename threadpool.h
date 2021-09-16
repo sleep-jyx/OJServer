@@ -108,8 +108,7 @@ bool threadpool<T>::append(T *request)
 template <typename T>
 void *threadpool<T>::worker(void *arg)
 {
-    //拷贝构造函数？
-    //worker()线程的线程池依然是当前池？
+    //worker()线程的线程池依然是当前池
     threadpool *pool = (threadpool *)arg;
     pool->run();
     return pool;
